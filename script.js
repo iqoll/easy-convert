@@ -18,7 +18,13 @@ let convertFromCm = () => {
     inRef.value = (cm / 2.54).toFixed(2);
 }
 
+let convertFromIn = () => {
+    let inch = inRef.value;
 
+    ftRef.value = (inch / 12).toFixed(2);
+    cmRef.value = (inch * 2.54).toFixed(2);
+}
 
 ftRef.addEventListener('input', convertFromFt);
 cmRef.addEventListener('input', convertFromCm);
+inRef.addEventListener('input', convertFromIn);
