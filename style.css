@@ -10,6 +10,12 @@ body {
     background: #3066f6;
 }
 
+/* Tabs */
+.tabs {
+    background: #ffffff;
+    border-bottom: 4px solid #3d3d3d;
+}
+
 .container {
     background-color: #ffffff;
     width: 90vh;
