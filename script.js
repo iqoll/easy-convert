@@ -1,6 +1,7 @@
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
-
+const body = document.querySelector("body");
+const colors = ['#3066f6', '#ff8b1b', '#8052ec'];
 
 // Variables for Length, Weight, Temperature
 const ftRef = document.getElementById('ft');
@@ -27,6 +28,22 @@ function selectItem(e) {
     tabContentItems.classList.add('show');
 }
 
+// Change background color
+body.style.backgroundColor = '#3066f6'
+function changeBg() {
+    switch (this.id) {
+        case 'tab-1':
+            body.style.backgroundColor = colors[0];
+            break;
+        case 'tab-2':
+            body.style.backgroundColor = colors[1];
+            break;
+        case 'tab-3':
+            body.style.backgroundColor = colors[2];
+            break;
+    }
+}
+
 function removeBorder() {
     tabItems.forEach(item => item.classList.remove('tab-border'));
 }
@@ -36,7 +53,8 @@ function removeShow() {
 }
 
 // Listen to click event
-tabItems.forEach(item => item.addEventListener('click', selectItem))
+tabItems.forEach(item => item.addEventListener('click', selectItem));
+tabItems.forEach(item => item.addEventListener('click', changeBg));
 
 // Functions to convert length
 let convertFromFt = () => {
