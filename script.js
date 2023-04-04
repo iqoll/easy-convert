@@ -1,8 +1,21 @@
+const tabItems = document.querySelectorAll('.tabs');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
+
+
+// Variables for Length, Weight, Temperature
 const ftRef = document.getElementById('ft');
 const cmRef = document.getElementById('cm');
 const inRef = document.getElementById('in');
 
-// Functions to convert
+const kgRef = document.getElementById('kg');
+const lbRef = document.getElementById('lb');
+const ozRef = document.getElementById('oz');
+
+const clRef = document.getElementById('cl');
+const fhRef = document.getElementById('fh');
+const kvRef = document.getElementById('kv');
+
+// Functions to convert length
 let convertFromFt = () => {
     let ft = ftRef.value;
 
