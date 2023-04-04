@@ -90,3 +90,30 @@ let convertFromOz = () => {
 kgRef.addEventListener('input', convertFromKg);
 lbRef.addEventListener('input', convertFromLb);
 ozRef.addEventListener('input', convertFromOz);
+
+// Temperature Converter Function 
+
+let convertFromCl = () => {
+    cl = parseFloat(clRef.value);
+
+    fhRef.value = ((cl * 9 / 5) + 32).toFixed(2);
+    kvRef.value = (cl + 273.15).toFixed(2);
+}
+
+let convertFromFh = () => {
+    fh = fhRef.value;
+
+    clRef.value = ((fh - 32) * 5 / 9).toFixed(2);
+    kvRef.value = ((fh - 32) * 5 / 9).toFixed(2);
+}
+
+let convertFromKv = () => {
+    kv = kvRef.value;
+
+    clRef.value = (kv - 273.15).toFixed(2);
+    fhRef.value = (((kv - 273.15) * 1.8) + 32).toFixed(2);
+}
+
+clRef.addEventListener('input', convertFromCl);
+fhRef.addEventListener('input', convertFromFh);
+kvRef.addEventListener('input', convertFromKv);
