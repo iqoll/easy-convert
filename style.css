@@ -37,6 +37,10 @@ body {
     cursor: pointer;
 }
 
+.tab-border {
+    border-bottom: 4px solid #3d3d3d;
+}
+
 /* Tab Content */
 .tab-content .tab-content-item {
     background-color: #ffffff;
@@ -56,6 +60,17 @@ h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1.5rem;
+}
+
+/* Hides Content Initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
 }
 
 .input-wrapper label {
