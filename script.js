@@ -1,4 +1,4 @@
-const tabItems = document.querySelectorAll('.tabs');
+const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 
@@ -14,6 +14,29 @@ const ozRef = document.getElementById('oz');
 const clRef = document.getElementById('cl');
 const fhRef = document.getElementById('fh');
 const kvRef = document.getElementById('kv');
+
+// Select tab content item
+function selectItem(e) {
+    removeBorder();
+    removeShow();
+
+    // add border to current tab
+    this.classList.add('tab-border');
+    // add show class to current tab using DOM to grab content
+    const tabContentItems = document.querySelector(`#${this.id}-content`);
+    tabContentItems.classList.add('show');
+}
+
+function removeBorder() {
+    tabItems.forEach(item => item.classList.remove('tab-border'));
+}
+
+function removeShow() {
+    tabContentItems.forEach(item => item.classList.remove('show'));
+}
+
+// Listen to click event
+tabItems.forEach(item => item.addEventListener('click', selectItem))
 
 // Functions to convert length
 let convertFromFt = () => {
