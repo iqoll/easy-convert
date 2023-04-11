@@ -14,3 +14,15 @@ A JavaScript-based web application that provides a simple and intuitive interfac
 I used all of these concepts for the first time in this project, and was able to successfully implement them in the first four day sprint.
 
 <img src="public/length.png" width="1000">
+
+<img src="public/mass.png" width="1000">
+
+### To get started:
+To use EasyConvert, you can clone the project from Github or download the files directly to your computer. The index.html file contains the HTML markup for the user interface, while the style.css file contains the CSS styles. The script.js file contains the JavaScript code that powers the conversion logic.
+
+* open the `index.html` file in your web browser to use the Multi-Converter.
+
+There are three tabs at the top of the page, one for each category: Length, Mass, and Temperature. Clicking on each tab will reveal a form where you can enter a value in one unit and see the equivalent values in the other units for that category.
+
+* The Length category allows you to convert between feet, centimeters, and inches. You can enter a value in any of the three input fields, and the other two fields will update automatically as you type.
+
