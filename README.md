@@ -17,6 +17,8 @@ I used all of these concepts for the first time in this project, and was able to
 
 <img src="public/mass.png" width="1000">
 
+<img src="public/temp.png" width="1000">
+
 ### To get started:
 To use EasyConvert, you can clone the project from Github or download the files directly to your computer. The index.html file contains the HTML markup for the user interface, while the style.css file contains the CSS styles. The script.js file contains the JavaScript code that powers the conversion logic.
 
@@ -24,5 +26,14 @@ To use EasyConvert, you can clone the project from Github or download the files 
 
 There are three tabs at the top of the page, one for each category: Length, Mass, and Temperature. Clicking on each tab will reveal a form where you can enter a value in one unit and see the equivalent values in the other units for that category.
 
-* The Length category allows you to convert between feet, centimeters, and inches. You can enter a value in any of the three input fields, and the other two fields will update automatically as you type.
+* <b>The Length category<b> allows you to convert between feet, centimeters, and inches. You can enter a value in any of the three input fields, and the other two fields will update automatically as you type.
 
+* <b> The Mass category<b> Similar to the Length category, you can enter a value in any of the three input fields, and the other two fields will update automatically as you type.
+
+* <b> The Temperature category<b> Similar to the Length category, you can enter a value in any of the three input fields, and the other two fields will update automatically as you type.
+
+### Contributing
+If you would like to contribute to EasyConvert, please fork the repository and submit a pull request. You can also submit bug reports or feature requests through the Github Issues page.
+  
+### License 
+EasyConvert is licensed under the <a href="https://opensource.org/license/mit/">MIT License</a>. You are free to use, modify, and distribute the program as you wish, as long as you include the original license and attribution information.
