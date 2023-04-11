@@ -3,7 +3,7 @@ const tabContentItems = document.querySelectorAll('.tab-content-item');
 const body = document.querySelector("body");
 const colors = ['#3066f6', '#ff8b1b', '#8052ec'];
 
-// Variables for Length, Weight, Temperature
+// Variables for Length, Mass, Temperature
 const ftRef = document.getElementById('ft');
 const cmRef = document.getElementById('cm');
 const inRef = document.getElementById('in');
@@ -83,7 +83,7 @@ ftRef.addEventListener('input', convertFromFt);
 cmRef.addEventListener('input', convertFromCm);
 inRef.addEventListener('input', convertFromIn);
 
-// Function to convert weight
+// Function to convert mass
 let convertFromKg = () => {
     kg = kgRef.value;
 
